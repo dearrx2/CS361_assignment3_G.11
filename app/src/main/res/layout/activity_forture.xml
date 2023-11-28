@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/varelaround_regular"
+        android:text="@string/greeting"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="38dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greeting"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/varelaround_regular"
+        android:text="@string/sub_greeting"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subGreeting"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="shake.json" />
+
+    <TextView
+        android:id="@+id/shakeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lottieAnimationView"
+        android:layout_alignBottom="@+id/lottieAnimationView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-100dp"
+        android:text="Shake your phone"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
